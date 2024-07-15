@@ -4,7 +4,6 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from models import User
-from schemas import UserCreate
 from database import engine, Base, get_db
 
 Base.metadata.create_all(bind=engine)
